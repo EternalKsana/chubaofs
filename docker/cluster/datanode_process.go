@@ -136,7 +136,7 @@ func DataNodeProcessInstance() *DataNodeProcess {
 		raftDir: 		"/export/Data/datanode/raft",
 		consulAddr: 	"http://consul.prometheus-cfs.local",
 		exporterPort:	 9512,
-		masterAddr: 	[
+		/*masterAddr: 	[
 			"192.168.31.173:80",
 		"192.168.31.141:80",
 		"192.168.30.200:80"
@@ -144,7 +144,7 @@ func DataNodeProcessInstance() *DataNodeProcess {
 		disks: [
 		"/data0:21474836480",
 		"/data1:21474836480"
-	]
+	]*/
 	}
 	return datanode
 }

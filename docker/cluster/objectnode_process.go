@@ -21,7 +21,7 @@ type ObjectNodeProcess struct{
 	logDir				  string
 	logLevel			  string
 	masterAddr			  []string
-	exporterPort		  string
+	exporterPort		          int
 	prof				  string
 
 	ExtraArgs []string
@@ -118,18 +118,18 @@ func ObjectNodeProcessInstance() *ObjectNodeProcess {
 		role: 		"objectnode",
 		listen: 	":80",
 		region: 	"cfs_default",
-		domains: 	[
+		/*domains: 	[
 			"object.cfs.local"
-	],
+	],*/
 		logDir: 	"/opt/cfs/objectnode/logs",
 		logLevel: 	"debug",
-		masterAddr: 	[
+		/*masterAddr: 	[
 		"172.20.240.95:7002",
 		"172.20.240.94:7002",
 		"172.20.240.67:7002"
-	],
+	],*/
 		exporterPort: 9512,
-		prof: 		"7013"
+		prof: 		"7013",
 	}
 	return objectnode
 }
