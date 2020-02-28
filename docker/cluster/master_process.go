@@ -141,7 +141,7 @@ func MasterProcessInstance() *MasterProcess {
 		storeDir:	"/export/Data/master/rocksdbstore",
 		exporterPort: 9510,
 		consulAddr: "http://consul.prometheus-cfs.local",
-		clusterName:"test",
+		clusterName:"cfs",
 		metaNodeReservedMem: "134217728",
 	}
 	return master

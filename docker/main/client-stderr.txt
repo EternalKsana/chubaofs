@@ -1,0 +1,6 @@
+flag provided but not defined: -mount_point
+Usage of client:
+  -c string
+    	FUSE client config file
+  -f	run foreground
+  -v	show version
